@@ -26,8 +26,6 @@ export async function userLogin(credentials) {
       else delete axios.defaults.headers.common['Authorization'];
       const result = mainDataModel.fromApiData(res.data);
       resolve(result);
-      console.log(res.data);
-      console.log(result);
     } catch (error) {
       reject(error);
     }
@@ -43,8 +41,6 @@ export async function userUpdate(userName) {
       );
       const result = mainDataModel.fromApiData(res.data);
       resolve(result);
-      console.log(res.data);
-      console.log(result);
     } catch (error) {
       console.log('error userUpDate');
       console.log(error);

@@ -29,6 +29,4 @@ export default function LogIn() {
       )}
     </>
   );
-
-  // return !isAuth && window.alert('Username ou Mot de passe incorrect');
 }
